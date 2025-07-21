@@ -32,8 +32,12 @@
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+    <script
+      src="./assets/maugallery.js"
+      defer></script>
+    <script
+      src="./assets/scripts.js"
+      defer></script>
     <title>Nina Carducci</title>
     <meta
       name="description"
@@ -144,15 +148,26 @@
         </button>
       </div>
     </section>
-    <section id="about">
+    <section
+      id="about"
+      itemscope
+      itemtype="https://schema.org/Person">
+      <span
+        class="display-none"
+        itemprop="name"
+        >Nina Carducci</span
+      >
       <div class="picture left">
         <img
           src="./assets/images/nina.webp"
-          alt="Portrait de Nina Carducci" />
+          alt="Portrait de Nina Carducci"
+          itemprop="image" />
       </div>
       <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
-        <p class="about-me__introduction">
+        <p
+          class="about-me__introduction"
+          itemprop="description">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
@@ -169,61 +184,73 @@
         </p>
       </div>
     </section>
-    <section id="gallery">
+    <section
+      id="gallery"
+      itemscope
+      itemtype="https://schema.org/ImageGallery">
       <h2 class="title">Portfolio</h2>
       <div class="container py-3">
         <div
           class="gallery"
           style="display: none">
           <img
+            itemprop="image"
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/concert_01.webp"
             loading="lazy"
             alt="Concert d'un groupe de musique." />
           <img
+            itemprop="image"
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/entreprise_01.webp"
             loading="lazy"
             alt="Portrait d'un homme en costume de travail." />
           <img
+            itemprop="image"
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/entreprise_02.webp"
             loading="lazy"
             alt="Employée qui sourit lors d'une réunion professionnelle." />
           <img
+            itemprop="image"
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/mariage_01.webp"
             loading="lazy"
             alt="Gros plan sur les mains de deux mariés pendant leurs voeux." />
           <img
+            itemprop="image"
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/portrait_01.webp"
             loading="lazy"
             alt="Portraint d'un homme éblouie par le soleil." />
           <img
+            itemprop="image"
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/mariage_02.webp"
             loading="lazy"
             alt="Couple de jeunes mariés qui marchent sur la plage." />
           <img
+            itemprop="image"
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/portrait_02.webp"
             loading="lazy"
             alt="Portait d'une jeune femme vue au travers d'un grillage" />
           <img
+            itemprop="image"
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/concert_02.webp"
             loading="lazy"
             alt="Chanteur lors d'un concert, entouré de fumée et de jeux de lumière." />
           <img
+            itemprop="image"
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/entreprise_03.webp"
@@ -248,43 +275,52 @@
     <section id="services">
       <h2 class="title">Mes services</h2>
       <div class="container">
-        <div class="service">
+        <div
+          class="service"
+          itemscope
+          itemtype="https://schema.org/Service">
           <div class="service__description">
-            <h3>Shooting photo</h3>
-            <p>
+            <h3 itemprop="name">Shooting photo</h3>
+            <p itemprop="description">
               Pour capturer vos moments les plus précieux et garder un souvenir
               impérissable. Je me déplace en Île-de-France pour réaliser vos
               photos
             </p>
           </div>
           <div class="service__price">
-            <p>350€/demi journée</p>
+            <p itemprop="offers">350€/demi journée</p>
             <p>Matériel, déplacement inclus</p>
           </div>
         </div>
-        <div class="service">
+        <div
+          class="service"
+          itemscope
+          itemtype="https://schema.org/Service">
           <div class="service__description">
-            <h3>Retouches</h3>
-            <p>
+            <h3 itemprop="name">Retouches</h3>
+            <p itemprop="description">
               Vous souhaitez retoucher vos photos pour un résultat professionnel
               ? Bénéficier d’un rendu optimal pour vos publications
             </p>
           </div>
           <div class="service__price">
-            <p>50€/photo</p>
+            <p itemprop="offers">50€/photo</p>
             <p>2 AR par photo</p>
           </div>
         </div>
-        <div class="service">
+        <div
+          class="service"
+          itemscope
+          itemtype="https://schema.org/Service">
           <div class="service__description">
-            <h3>Album photos</h3>
-            <p>
+            <h3 itemprop="name">Album photos</h3>
+            <p itemprop="description">
               Partagez avec vos proches et vos clients les photos des moments
               partagés ensemble à travers un album photo personnalisé
             </p>
           </div>
           <div class="service__price">
-            <p>400€ album A4</p>
+            <p itemprop="offers">400€ album A4</p>
             <p>30 pages recto/verso</p>
           </div>
         </div>
@@ -302,16 +338,17 @@
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
     </section>
-    <footer id="contact">
+    <footer
+      id="contact"
+      itemscope
+      itemtype="https://schema.org/ContactPoint">
       <div class="container">
         <div class="form-container">
           <p>Une question ? Une demande de devis ?</p>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
-          <form
-            action=""
-            method="post">
+          <form method="post">
             <label for="nom">Nom</label>
             <input
               type="text"

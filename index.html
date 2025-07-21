@@ -289,31 +289,38 @@
           <form
             action=""
             method="post">
-            <label>Nom</label>
+            <label for="nom">Nom</label>
             <input
               type="text"
               name="nom"
-              id="nom" />
-            <label>Email</label>
+              id="nom"
+              placeholder="Votre nom"
+              autocomplete="name"
+              required />
+            <label for="email">Email</label>
             <input
               type="email"
               name="email"
-              id="email" />
-            <label>Message</label>
+              id="email"
+              placeholder="Votre adresse mail"
+              autocomplete="email"
+              required />
+            <label for="message">Message</label>
             <textarea
               name="message"
               id="message"
               cols="30"
-              rows="10"></textarea>
-            <input
-              type="submit"
-              value="Envoyer" />
+              rows="10"
+              placeholder="Votre message"
+              required></textarea>
+            <button type="submit">Envoyer</button>
           </form>
         </div>
         <div class="picture right">
           <img
             src="./assets/images/camera.webp"
-            loading="lazy" />
+            loading="lazy"
+            alt="Appareil photo argentique." />
         </div>
       </div>
     </footer>

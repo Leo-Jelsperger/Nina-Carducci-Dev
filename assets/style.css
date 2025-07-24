@@ -42,6 +42,9 @@ nav a {
   text-decoration: none;
   color: #000;
 }
+nav a:hover {
+  color: black;
+}
 #about {
   display: flex;
   background-color: #f6d2b8;
@@ -78,6 +81,7 @@ nav a {
   font-family: 'Spectral';
   font-weight: 800;
   font-style: italic;
+  margin-bottom: 8px;
 }
 #about-me p {
   width: 80%;
@@ -89,9 +93,12 @@ nav a {
 .title {
   text-align: center;
   padding-block: 2em;
+  font-size: 28px;
 }
-.gallery nav {
-  justify-content: center;
+.gallery {
+  ul {
+    justify-content: center;
+  }
 }
 nav-pills nav-link.active,
 nav-pills .show > nav-link {
@@ -101,6 +108,25 @@ nav-pills .show > nav-link {
 }
 nav-pills nav-link {
   color: #000;
+}
+.active-tag {
+  background-color: #beb45a !important;
+  border-radius: 0% !important;
+  color: white !important;
+}
+.nav-link {
+  color: black;
+  cursor: pointer;
+}
+.nav-link:hover {
+  transform: scale(1.2) !important;
+  color: black !important;
+  transition: all 0.1s ease-in-out;
+}
+.active-tag:hover {
+  transform: scale(1) !important;
+  color: white !important;
+  transition: all 0.1s ease-in-out;
 }
 .item-column {
   position: relative;
@@ -138,6 +164,8 @@ nav-pills nav-link {
   font-family: 'Spectral';
   font-style: italic;
   font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 8px;
 }
 .quote__author {
   font-family: 'Spectral';
@@ -175,6 +203,13 @@ nav-pills nav-link {
   justify-content: space-between;
   z-index: 1;
 }
+.offer {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.precision {
+  margin: 0;
+}
 #contact {
   margin: auto;
   background-color: #d8d3a8;
@@ -197,6 +232,9 @@ nav-pills nav-link {
 }
 .form-container {
   flex: 2;
+  h2 {
+    font-size: 28px;
+  }
 }
 form {
   display: flex;
@@ -210,6 +248,7 @@ form input {
   border: solid 1px;
   height: 2.5em;
   margin-bottom: 20px;
+  padding: 0px 8px;
 }
 form textarea {
   width: 100%;
@@ -217,12 +256,13 @@ form textarea {
   border: solid 1px;
   height: 5em;
   line-height: 2.5em;
-  font-size: 1.2em;
   margin-bottom: 20px;
+  padding: 0px 8px;
 }
-input[type='submit'] {
+button {
   background-color: #beb45a;
   padding: 0.5em 1em;
+  width: 100%;
 }
 @media (max-width: 1180px) {
   .picture {

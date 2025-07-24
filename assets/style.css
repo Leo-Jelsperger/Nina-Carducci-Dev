@@ -112,7 +112,7 @@ nav-pills nav-link {
 .active-tag {
   background-color: #beb45a !important;
   border-radius: 0% !important;
-  color: white !important;
+  color: black !important;
 }
 .nav-link {
   color: black;

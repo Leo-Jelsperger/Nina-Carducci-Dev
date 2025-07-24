@@ -276,12 +276,21 @@ button {
     margin-top: 0;
     margin-bottom: 1em;
   }
+  .about-me__introduction {
+    font-size: 16px !important;
+  }
   #about-me h6,
   #about-me p {
     width: 100%;
   }
+  .quote__text {
+    font-size: 38px !important;
+  }
 }
 @media (max-width: 1000px) {
+  h2 {
+    font-size: 26px !important;
+  }
   #about {
     flex-direction: column;
   }
@@ -297,6 +306,9 @@ button {
   .about-me__title {
     text-align: center;
     margin-top: 1em;
+  }
+  .about-me__introduction {
+    font-size: 16px !important;
   }
   #services .container {
     flex-direction: column;
@@ -325,6 +337,9 @@ button {
   .picture.right::before {
     width: 100%;
     height: 30%;
+  }
+  .quote__text {
+    font-size: 34px !important;
   }
 }
 @media (max-width: 650px) {
@@ -362,6 +377,18 @@ button {
   }
   .picture {
     width: 80%;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  .quote__text {
+    font-size: 28px !important;
+  }
+  .offer {
+    font-size: 22px !important;
   }
 }
 .instagram-logo {

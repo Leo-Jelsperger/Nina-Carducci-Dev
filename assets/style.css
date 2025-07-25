@@ -45,11 +45,6 @@ nav a {
 nav a:hover {
   color: black;
 }
-.fa-solid {
-  color: white;
-  font-size: 32px;
-  margin: auto;
-}
 #about {
   display: flex;
   background-color: #f6d2b8;

@@ -6430,6 +6430,7 @@ fieldset:disabled .btn {
   background-color: black;
   border-radius: 8px;
   height: 48px;
+  color: white;
 }
 
 /* rtl:options: {

@@ -48,6 +48,10 @@ nav a:hover {
 .fa-solid {
   font-size: 32px;
   color: white;
+  background-color: black;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 #about {
   display: flex;

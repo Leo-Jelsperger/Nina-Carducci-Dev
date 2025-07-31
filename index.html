@@ -9,7 +9,7 @@
       href="./assets/bootstrap/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="./assets/style.css" />
+      href="./assets/style.min.css" />
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com" />
@@ -167,7 +167,6 @@
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
-          aria-hidden="true"
           aria-label="Previous">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
@@ -175,41 +174,25 @@
           class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span
-            class="carousel-control-next-icon"
-            aria-hidden="true"
-            aria-label="Next"
-            ><i class="fa-solid fa-chevron-right"></i>
-            <p class="display-none">Suivant</p></span
-          >
-          <span class="visually-hidden">Next</span>
+          data-bs-slide="next"
+          aria-label="Next">
+          <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
     </section>
-    <section
-      id="about"
-      itemscope
-      itemtype="https://schema.org/LocalBusiness">
-      <span
-        class="display-none"
-        itemprop="name"
-        >Nina Carducci</span
-      >
+    <section id="about">
+      <span class="display-none">Nina Carducci</span>
       <div class="picture left">
         <img
           src="./assets/images/nina.webp"
           alt="Portrait de Nina Carducci"
-          itemprop="image"
           width="555"
           height="555"
           loading="lazy" />
       </div>
       <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
-        <p
-          class="about-me__introduction"
-          itemprop="description">
+        <p class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
@@ -224,21 +207,9 @@
           puissiez y puiser de l’amour, du bonheur, de la tendresse et de
           lumière à chaque fois que vous poserez les yeux sur vos photos.
         </p>
-        <p
-          class="display-none"
-          itemprop="telephone">
-          +33 6 12 34 56 78
-        </p>
-        <p
-          class="display-none"
-          itemprop="priceRange">
-          50€ - 400€
-        </p>
-        <p
-          class="display-none"
-          itemprop="address">
-          Strasbourg, France
-        </p>
+        <p class="display-none">+33 6 12 34 56 78</p>
+        <p class="display-none">50€ - 400€</p>
+        <p class="display-none">Strasbourg, France</p>
       </div>
     </section>
     <section
@@ -350,64 +321,43 @@
     <section id="services">
       <h2 class="title">Mes services</h2>
       <div class="container">
-        <div
-          class="service"
-          itemscope
-          itemtype="https://schema.org/Service">
+        <div class="service">
           <div class="service__description">
-            <h3 itemprop="name">Shooting photo</h3>
-            <p itemprop="description">
+            <h3>Shooting photo</h3>
+            <p>
               Pour capturer vos moments les plus précieux et garder un souvenir
               impérissable. Je me déplace en Île-de-France pour réaliser vos
               photos
             </p>
           </div>
           <div class="service__price">
-            <h4
-              itemprop="offers"
-              class="offer">
-              350€/demi journée
-            </h4>
+            <h4 class="offer">350€/demi journée</h4>
             <p class="precision">Matériel, déplacement inclus</p>
           </div>
         </div>
-        <div
-          class="service"
-          itemscope
-          itemtype="https://schema.org/Service">
+        <div class="service">
           <div class="service__description">
-            <h3 itemprop="name">Retouches</h3>
-            <p itemprop="description">
+            <h3>Retouches</h3>
+            <p>
               Vous souhaitez retoucher vos photos pour un résultat professionnel
               ? Bénéficier d’un rendu optimal pour vos publications
             </p>
           </div>
           <div class="service__price">
-            <h4
-              itemprop="offers"
-              class="offer">
-              50€/photo
-            </h4>
+            <h4 class="offer">50€/photo</h4>
             <p class="precision">2 AR par photo</p>
           </div>
         </div>
-        <div
-          class="service"
-          itemscope
-          itemtype="https://schema.org/Service">
+        <div class="service">
           <div class="service__description">
-            <h3 itemprop="name">Album photos</h3>
-            <p itemprop="description">
+            <h3>Album photos</h3>
+            <p>
               Partagez avec vos proches et vos clients les photos des moments
               partagés ensemble à travers un album photo personnalisé
             </p>
           </div>
           <div class="service__price">
-            <h4
-              itemprop="offers"
-              class="offer">
-              400€ album A4
-            </h4>
+            <h4 class="offer">400€ album A4</h4>
             <p class="precision">30 pages recto/verso</p>
           </div>
         </div>
@@ -479,10 +429,10 @@
       crossorigin="anonymous"
       defer></script>
     <script
-      src="./assets/maugallery.js"
+      src="./assets/maugallery.min.js"
       defer></script>
     <script
-      src="./assets/scripts.js"
+      src="./assets/scripts.min.js"
       defer></script>
   </body>
 </html>
